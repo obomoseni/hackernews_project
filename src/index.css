@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  background-color: #27a770;
+  background-image: linear-gradient(315deg, #27a770 0%, #efefef 74%);
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: 'Black Ops One', system-ui;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.926);
+  color: white;
+  margin-bottom: 40px;
+}
+
+form {
+  margin-bottom: 35px;
+}
+
+input {
+  font-family: inherit;
+  text-align: center;
+  height: 40px;
+  font-size: 20px;
+  padding: 50px;
+  width: 50%;
+  border-radius: 30px;
+  border: solid 1px #CFE5AE;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #a5ea3e;
+}
+
+button {
+  font-family: inherit;
+  border: solid 1px #CFE5AE;
+  padding: 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-left: 10px;
+  transition: all 0.15s ease-in-out;
+}
+
+button:hover {
+  background-color: #CFE5AE;
+}
+
+.container {
+  padding: 20px;
+}
+
+.category {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.news-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 10px;
+  border: solid 1px #CFE5AE;
+  padding: 10px;
+}
+
+
+.paginate-page {
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 5px;
+  margin: 0;
+  list-style: none;
+}
+
+.paginate-page a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #CFE5AE;
+  border-radius: 5px;
+  margin: 0 8px;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 10px 12px;
+}
+
+.paginate-page a:hover {
+  background-color: #CFE5AE;
+}
+
+@media (min-width: 1024px) {
+  form {
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    width: 100%
+  }
+
+  .container {
+    max-width: 992px;
+    margin: auto;
+  }
+
+}
